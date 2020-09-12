@@ -1,0 +1,43 @@
+
+body {
+  background:lightgrey;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.card-header{
+  text-align: center;
+}
+.login_style{
+padding-top: 200px;
+padding-left: 550px;
+}
+
+.bt{
+padding-top: 10px;
+padding-left: 710px;
+
+}
+
+#display {
+  font-size: 40px;
+  background: rgba(255,255,255,.3);
+  border-radius: 15px;
+  margin: 20px auto 0px auto;
+  width: 50%;
+ }
+
+#generate1 {
+  padding-top: 50px;
+  padding-left: 550px;
+  color: black;
+  font-size: 29px;
+
+}
+
+#generate2 {
+  padding: 5px 550px;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+}

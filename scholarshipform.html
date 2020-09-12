@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>
+    Oxeir
+  </title>
+
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <section id="navbar">
+    <nav class="navbar navbar-expand-lgnavbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Oxeir</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+
+
+          <li class="nav-item active">
+            <span class="nav-item class=" sr-only"">
+              <a class="nav-link" href="index.html">
+                <h4>Home</h4>
+              </a>
+          </li>
+          <li class="nav-item active">
+            <span class="nav-item">
+              <a class="nav-link" href="#">
+                <h4>About Us</h4>
+              </a>
+          </li>
+          <li class="nav-item active">
+            <span class="nav-item">
+              <a class="nav-link" href="#">
+                <h4>Contact Us</h4>
+              </a>
+          </li>
+
+        </ul>
+
+      </div>
+    </nav>
+
+  </section>
+
+  <section id="signup">
+
+
+    <div class="login_style">
+
+      <div class="card" style="width: 25rem;">
+        <div class="card-header">
+          <b>Scholarship Form</b>
+        </div>
+        <div class="card-body">
+          <form>
+            <div class="form-group">
+              <label for="formGroupExampleInput">First Name</label>
+              <input type="text" class="form-control" placeholder="First name">
+              <br>
+              <label for="formGroupExampleInput2">Last Name</label>
+              <input type="text" class="form-control" placeholder="Last name">
+              <br>
+
+              <label for="formGroupExampleInput2">Parent Name</label>
+              <input type="text" class="form-control" placeholder="Parent name">
+              <br>
+              <label for="exampleFormControlFile1">Identity Proof</label>
+              <input type="file" class="form-control-file" id="exampleFormControlFile1">
+              <br>
+              <div class="form-group">
+                <label for="inputAddress2">Address</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputCity">City</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <br>
+                <div class="form-group col-md-6">
+                  <label for="inputState">State</label>
+                  <input type="text" class="form-control" id="inputState">
+                </div>
+                <br>
+                <div class="form-group col-md-2">
+                  <label for="inputZip">Zip</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+               </div>
+              <br>
+               <div class="form-group">
+                 <div class="form-check">
+                   <input class="form-check-input" type="checkbox" id="gridCheck">
+                   <label class="form-check-label" for="gridCheck">
+                   All the information provided by me is true
+                   </label>
+                 </div>
+                 <div class="form-check">
+                   <input class="form-check-input" type="checkbox" id="gridCheck">
+                   <label class="form-check-label" for="gridCheck">
+                     I accept all the terms & conditions
+                   </label>
+                 </div>
+               </div>
+
+             </div>
+             <br>
+
+           </form>
+         </div>
+       </div>
+     </div>
+     <div class="bt">
+       <button class="btn btn-primary" onclick="gen();">
+         Submit
+       </button>
+     </div>
+
+     <p id="generate1"> Your Generated Referance Number is: </p>
+     <p id="generate2">
+     </p>
+     <script>
+       var up = document.getElementById('GFG_UP');
+       var down = document.getElementById('generate2');
+
+       function gen() {
+         var minm = 1000000;
+         var maxm = 9999999;
+         down.innerHTML = Math.floor(Math
+           .random() * (maxm - minm + 1)) + minm;
+       }
+     </script>
+   </section>
+
+
+   <div class="alert alert-primary" role="alert">
+     Return back to <a href="index.html" class="alert-link">home page</a>.
+   </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
